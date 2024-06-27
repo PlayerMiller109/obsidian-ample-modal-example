@@ -10,7 +10,7 @@
 
 每个 modal 都有一些套路部分，如图红框所示，剩下部分就和定义一个普通函数没区别了，如图绿框所示，整个 modal 可看作一个异步函数 `rgx_form_modal = async (su)=>`。这样，就很好理解在其他文件引用时应该如何书写。
 
-<image width="800" src="https://github.com/PlayerMiller109/obsidian-ample-modal-example/assets/145541890/87081283-87ab-466a-bce9-c93a7dbb5242">
+<image width="700" src="https://github.com/PlayerMiller109/obsidian-ample-modal-example/assets/145541890/56dfd86d-85f0-4643-a543-05e9900d8227">
 
 例如，图示的 modal 只有 resolve，且 `this.close()` 后的 `this.r()` 中间没有参数，所以没有返回值，在其他文件使用时，格式就是：
 
