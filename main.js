@@ -1,17 +1,14 @@
 const ob = require('obsidian')
 module.exports = class extends ob.Plugin {
-  constructor(app, manifest) {
-    super(app, manifest)
-    this.mySimpleApi = require('D:/Global Edu/.obsidian/plugins/ample-modal/src/modals.js')(app, ob)
-    // 假设 JS 路径如上, 希望的 Api 名为 mySimpleApi
-  }
+  mySimpleApi = require(`${app.vault.adapter.basePath}/${app.plugins.manifests['ample-modal'].dir}/src/modals.js`)(app, ob)
+  // 假设 JS 路径如上, 希望的 Api 名为 mySimpleApi
   onload() {
     // 这里注册命令以展示 modals
     this.addCommand({
       id: 'test-suggester', name: 'Test suggester',
       callback: async ()=> {
-        const r1 = await this.mySimpleApi.suggester(['你能看到的'], ['你能得到的']); if (!r1) return
-        console.log(r1)
+        const r1 = await this.mySimpleApi.suggester(['你能看到的'], ['你能得到的'], '预填值, 可不填')
+        if (!r1) return; console.log(r1)
         const r2 = await this.mySimpleApi.suggester(p=> '选项'+p, [1, 2]); if (!r2) return
         console.log(r2)
       }

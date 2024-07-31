@@ -1,9 +1,5 @@
 # obsidian-ample-modal-example
 
->[!tip]
->modals from a simple obsidian plugin
->分享一些简单的弹出窗口方便任何其他插件复用作 API
-
 发布于 [Obsidian 中文论坛 t34933](https://forum-zh.obsidian.md/t/topic/34933/1)，里面有一些前置的说明。
 
 作者本人不是计算机专业的，一定要充分测试之后再使用，更好更安全的方式是参考示例自己写。

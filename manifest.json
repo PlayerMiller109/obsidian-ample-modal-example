@@ -2,8 +2,8 @@
   "id": "ample-modal",
   "name": "Ample Modal",
   "version": "0.0.1",
-  "minAppVersion": "0.0.1",
-  "description": "Plugin Modals",
+  "minAppVersion": "1.4.4",
+  "description": "Plugin modals.",
   "author": "PlayerMiller109",
   "authorUrl": "https://github.com/PlayerMiller109/obsidian-ample-modal-example",
   "isDesktopOnly": false
