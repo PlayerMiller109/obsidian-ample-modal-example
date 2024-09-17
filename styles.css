@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.ample.modal {
+  & .setting-item {border-top: none;}
+
+  & .full-line-input > .setting-item-info {display: none;}
+  & .full-line-input > .setting-item-control > input,
+  textarea.full-line-input {
+    flex-grow: 1; width: 100%; resize: none; overflow: hidden;
+  }
+
+  & .ok-btn {
+    --interactive-normal: var(--interactive-accent);
+    --interactive-hover: var(--interactive-accent-hover);
+  }
+
+  & .toggle-box {padding-block: var(--size-4-1);}
+  & .toggle-box+ .setting-item {padding-bottom: 0;}
+}
